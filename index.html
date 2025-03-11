@@ -23,19 +23,19 @@
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="button-container">
+            <div class="button-container" >
                 <button id="get-qoute">Get Qoute</button>
             </div>
         </div>
         <div class="burger-button">
-            <a href="javascript:void(0);" class="icon" onclick="burgerButton()">
+            <a href="#"  class="icon" onclick="burgerButton()">
                 <i class="fa fa-bars" aria-hidden="true" style="color: #fff;"></i>
             </a>
         </div>
     </nav>
     
     <div class="sample" id="sample">
-        <div class="links-design">
+        <div class="links-design" id="myLinks">
             <ul>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#AboutUs">About Us</a></li>
@@ -382,7 +382,7 @@
     </section>
 
 
-    <footer style="display: inline;">
+    <footer class="footer-hero">
         <section class="footer-section1">
             <div class="footer-container">
                 <div class="footer-card1">
@@ -434,6 +434,7 @@
 
         function burgerButton() {
             var b = document.getElementById("sample");
+
             if(b.style.display === "block") {
                 b.style.display = "none";
             }else {
