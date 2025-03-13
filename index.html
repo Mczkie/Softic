@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="burger-button">
-            <a href="#"  class="icon" onclick="burgerButton()">
+            <a href="javascript:void(0);"  class="icon" onclick="burgerButton()">
                 <i class="fa fa-bars" aria-hidden="true" style="color: #fff;"></i>
             </a>
         </div>
@@ -434,6 +434,9 @@
 
         function burgerButton() {
             var b = document.getElementById("sample");
+
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
 
             if(b.style.display === "block") {
                 b.style.display = "none";
